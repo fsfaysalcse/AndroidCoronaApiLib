@@ -14,8 +14,7 @@ Step 1. Add the JitPack repository to your build file
 
 ```bash
 allprojects {
-		repositories {
-			...
+	repositories {
 			maven { url 'https://jitpack.io' }
 		}
 	}
@@ -36,19 +35,17 @@ Corona.setTotalOutbreakListener(MainActivity.this,new TotalOutbreakListener() {
                    public void success(Response response) {
                     Log.d(TAG, "success: "+response.getMessage());
                      if (response.isSuccess()){
-                                   Log.d(TAG, "Coronavirus Cases : "+response.getOutbreak().getTotalCases()+"\n"+
-                                                   "Deaths : "+response.getOutbreak().getTotalDeaths()+"\n"+
-                                                   "Recovered : "+response.getOutbreak().getTotalRecovered()
-                                   );
-                               }
-                               dialog.dismiss();
-                           }
+                            Log.d(TAG, "Coronavirus Cases : "+response.getOutbreak().getTotalCases());
+                            Log.d(TAG,    "Deaths : "+response.getOutbreak().getTotalDeaths());
+                            Log.d(TAG, "Recovered : "+response.getOutbreak().getTotalRecovered());
+                            dialog.dismiss();
+                    }
 
                  @Override
                    public void failed(String errorMessage) {
                      Log.d(TAG, "failed: "+errorMessage);
                      dialog.dismiss();
-                   }
+              }
         });
 ```
 
