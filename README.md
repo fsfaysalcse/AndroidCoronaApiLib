@@ -1,4 +1,4 @@
-# COVID-19 CORONAVIRUS OUTBREAK [![](https://jitpack.io/v/fsfaysalcse/CoronaOutbreakLib.svg)](https://jitpack.io/#fsfaysalcse/CoronaOutbreakLib)
+# COVID-19 CORONAVIRUS OUTBREAK [![](https://jitpack.io/v/fsfaysalcse/AndroidCoronaApiLib.svg)](https://jitpack.io/#fsfaysalcse/CoronaOutbreakLib)
 
 Using this library you will find the following information about coronavirus-
 
@@ -23,7 +23,7 @@ Step 2. Add the dependency
 
 ```bash
 dependencies {
-	        implementation 'com.github.fsfaysalcse:CoronaOutbreakLib:0.1.0'
+	        implementation 'com.github.fsfaysalcse:AndroidCoronaApiLib:0.1.0'
 	}
 ```
 
