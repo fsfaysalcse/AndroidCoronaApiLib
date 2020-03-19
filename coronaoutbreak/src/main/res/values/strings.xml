@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CoronaOutbreak</string>
+    <string name="success">Data loaded successfully</string>
+    <string name="failed">Failed to retrieve data from server</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COVID-19 CORONAVIRUS OUTBREAK"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/resultView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="-------"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#D12828"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/getResultBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="get corona virus information"/>
+
+</LinearLayout>
