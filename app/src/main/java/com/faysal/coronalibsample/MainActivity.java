@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
                                            "Deaths : "+response.getOutbreak().getTotalDeaths()+"\n"+
                                            "Recovered : "+response.getOutbreak().getTotalRecovered()
                                    );
+
+                                   Log.d(TAG, "Coronavirus Cases : "+response.getOutbreak().getTotalCases()+"\n"+
+                                                   "Deaths : "+response.getOutbreak().getTotalDeaths()+"\n"+
+                                                   "Recovered : "+response.getOutbreak().getTotalRecovered()
+                                   );
                                }
 
                                dialog.dismiss();
