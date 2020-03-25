@@ -1,4 +1,4 @@
-# COVID-19 CORONAVIRUS OUTBREAK [![](https://jitpack.io/v/fsfaysalcse/AndroidCoronaApiLib.svg)](https://jitpack.io/#fsfaysalcse/CoronaOutbreakLib)
+# COVID-19 CORONAVIRUS OUTBREAK [![](https://jitpack.io/v/fsfaysalcse/AndroidCoronaApiLib.svg)](https://jitpack.io/#fsfaysalcse/AndroidCoronaApiLib)
 
 Using this library you will find the following information about coronavirus-
 
