@@ -23,7 +23,7 @@ Step 2. Add the dependency
 
 ```bash
 dependencies {
-	        implementation 'com.github.fsfaysalcse:AndroidCoronaApiLib:0.1.0'
+	        implementation 'com.github.fsfaysalcse:AndroidCoronaApiLib:0.1.1'
 	}
 ```
 
@@ -35,9 +35,11 @@ Corona.setTotalOutbreakListener(MainActivity.this,new TotalOutbreakListener() {
                    public void success(Response response) {
                     Log.d(TAG, "success: "+response.getMessage());
                      if (response.isSuccess()){
-                            Log.d(TAG, "Coronavirus Cases : "+response.getOutbreak().getTotalCases());
-                            Log.d(TAG,    "Deaths : "+response.getOutbreak().getTotalDeaths());
-                            Log.d(TAG, "Recovered : "+response.getOutbreak().getTotalRecovered());
+                             List<ReportByCountry> list=response.getReportByCountry();
+                             Log.d(TAG, "Coronavirus Cases : "+response.getOutbreak().getTotalCases());
+                             Log.d(TAG,    "Deaths : "+response.getOutbreak().getTotalDeaths());
+                             Log.d(TAG, "Recovered : "+response.getOutbreak().getTotalRecovered());
+                             Log.d(TAG, "Report List by Country : "+list.get(0).toString());
                             dialog.dismiss();
                     }
 

@@ -14,10 +14,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.faysal.coronaoutbreak.Corona;
+import com.faysal.coronaoutbreak.models.ReportByCountry;
 import com.faysal.coronaoutbreak.models.Response;
 import com.faysal.coronaoutbreak.utils.TotalOutbreakListener;
 
 import org.w3c.dom.Text;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
 
                                    );
 
-                                   Log.d(TAG, "success: ");
-
+                                   List<ReportByCountry> list=response.getReportByCountry();
                                    Log.d(TAG, "Coronavirus Cases : "+response.getOutbreak().getTotalCases());
                                    Log.d(TAG,    "Deaths : "+response.getOutbreak().getTotalDeaths());
                                    Log.d(TAG, "Recovered : "+response.getOutbreak().getTotalRecovered());
+                                   Log.d(TAG, "Report List by Country : "+list.get(0).toString());
                                }
 
                                dialog.dismiss();

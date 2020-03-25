@@ -1,9 +1,12 @@
 package com.faysal.coronaoutbreak.models;
 
+import java.util.List;
+
 public class Response {
     boolean isSuccess;
     String message;
     TotalOutbreak outbreak;
+    List<ReportByCountry> reportByCountry;
 
     public Response() {
     }
@@ -12,6 +15,13 @@ public class Response {
         this.isSuccess = isSuccess;
         this.message = message;
         this.outbreak = outbreak;
+    }
+
+    public Response(boolean isSuccess, String message, TotalOutbreak outbreak, List<ReportByCountry> reportByCountry) {
+        this.isSuccess = isSuccess;
+        this.message = message;
+        this.outbreak = outbreak;
+        this.reportByCountry = reportByCountry;
     }
 
     public boolean isSuccess() {
@@ -36,5 +46,13 @@ public class Response {
 
     public void setOutbreak(TotalOutbreak outbreak) {
         this.outbreak = outbreak;
+    }
+
+    public List<ReportByCountry> getReportByCountry() {
+        return reportByCountry;
+    }
+
+    public void setReportByCountry(List<ReportByCountry> reportByCountry) {
+        this.reportByCountry = reportByCountry;
     }
 }
